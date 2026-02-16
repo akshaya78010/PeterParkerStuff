@@ -1,0 +1,179 @@
+body {
+  background-color: rgb(37, 48, 48);
+}
+.card {
+  width: 450px;
+  height: 250px;
+  /* box-shadow: 0px 0px 20px 5px #05f4f9; */
+  background-image: url("C:/Users/hp/OneDrive/Desktop/Screenshot 2025-05-29 193828.png");
+  background-size: 450px;
+  /* border: 3px solid silver; */
+  position: relative;
+  top: 10px;
+  left: 600px;
+}
+
+.circle1 {
+  width: 170px;
+  height: 230px;
+  /* border-top-left-radius: 30px; */
+  /* border-bottom-right-radius: 30px; */
+  box-shadow: 0px 0px 10px 3px #05f4f9;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.circle2 {
+  width: 240px;
+  height: 230px;
+  /* border-radius: 30px; */
+  /* border-top-left-radius: 30px; */
+  /* border-bottom-right-radius: 30px; */
+  /* border: 6px solid silver; */
+  box-shadow: 0px 0px 10px 3px #05f4f9;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+}
+
+.photo {
+  width: 90px;
+  height: 90px;
+  background-image: url("akshu.png");
+  box-shadow: 0px 0px 10px 3px #05f4f9;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  z-index: 1;
+}
+
+.text {
+  color: #05f4f9;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  text-shadow: 0px 0px 10px 40px #05f4f9;
+  position: absolute;
+  top: 175px;
+  left: 25px;
+}
+
+.text1 {
+  color: #05f4f9;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 198px;
+  left: 25px;
+  text-shadow: 0 0 40px #05f4f9;
+}
+
+.text2 {
+  color: #05f4f9;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  text-shadow: 0 0 5px #05f4f9, 0 0 10px #05f4f9, 0 0 20px #05f4f9;
+}
+
+/* .text3 {
+  color: #05f4f9;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  text-shadow: 0 0 5px #05f4f9, 0 0 10px #05f4f9, 0 0 20px #05f4f9;
+} */
+
+.linkedin {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50px;
+  left: 220px;
+}
+
+.text4 {
+  color: #05f4f9;
+  font-size: 13px;
+  /* font-family: "Bad Script", cursive; */
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 50px;
+  left: 245px;
+  text-shadow: 0 0 40px #05f4f9;
+}
+
+.mail {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 90px;
+  left: 220px;
+}
+
+.text5 {
+  color: #05f4f9;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 88px;
+  left: 245px;
+  text-shadow: 0 0 40px #05f4f9;
+}
+
+.phone {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 120px;
+  left: 220px;
+}
+
+.text6 {
+  color: #05f4f9;
+  font-size: 18px;
+  /* font-family: "Playfair Display", serif; */
+  position: absolute;
+  top: 121px;
+  left: 245px;
+  text-shadow: 0 0 40px #05f4f9;
+}
+.graduation {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 148px;
+  left: 215px;
+}
+
+.text7 {
+  color: #05f4f9;
+  font-size: 18px;
+  /* font-family: "Playfair Display", serif; */
+  position: absolute;
+  top: 155px;
+  left: 250px;
+  text-shadow: 0 0 40px #05f4f9;
+}
+
+.location {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 185px;
+  left: 220px;
+}
+
+.text8 {
+  color: #05f4f9;
+  font-size: 15px;
+  /* font-family: "Playfair Display", serif; */
+  position: absolute;
+  top: 185px;
+  left: 250px;
+  text-shadow: 0 0 40px #05f4f9;
+}

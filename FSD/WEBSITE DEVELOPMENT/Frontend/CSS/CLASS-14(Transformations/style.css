@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 200px;
+}
+
+.demo1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: translateX(100px);
+}
+
+.demo2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transform: translateX(-100px);
+}
+
+.demo3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: translateY(100px);
+}
+
+.demo4 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: translateY(-100px);
+}
+
+.demo11 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: skewX(120deg);
+}
+
+.demo12 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: skewX(-120deg);
+}
+
+.demo13 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: skewY(120deg);
+}
+
+.demo14 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: skewY(-120deg);
+}

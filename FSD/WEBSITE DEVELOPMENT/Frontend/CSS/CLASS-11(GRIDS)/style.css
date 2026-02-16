@@ -1,0 +1,152 @@
+.parent {
+  width: 100%;
+  height: 100%;
+  border: 5px solid black;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: orange;
+}
+
+.child {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.child2 {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.child3 {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.child4 {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.child5 {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.child5 {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.child6 {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.child7 {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.child8 {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.child9 {
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.parent2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: yellow;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.child10 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 2px solid black;
+  align-self: center;
+  justify-self: center;
+}
+
+.child11 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 2px solid black;
+  align-self: center;
+  justify-self: center;
+}
+
+.child12 {
+  width: 100px;
+  height: 100px;
+  background-color: burlywood;
+  border: 2px solid black;
+  align-self: center;
+  justify-self: center;
+}
+
+.child13 {
+  width: 100px;
+  height: 100px;
+  background-color: darkcyan;
+  border: 2px solid black;
+  align-self: center;
+  justify-self: center;
+}
+
+.child14 {
+  width: 100px;
+  height: 100px;
+  background-color: darkmagenta;
+  border: 2px solid black;
+  align-self: center;
+  justify-self: center;
+}
+
+.child15 {
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  align-self: center;
+  justify-self: center;
+}
+
+.child16 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  align-self: center;
+  background-color: azure;
+  align-self: center;
+  justify-self: center;
+}
+
+.child17 {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  border: 2px solid black;
+  align-self: center;
+  justify-self: center;
+}
+
+.child18 {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+  border: 2px solid black;
+  align-self: center;
+  justify-self: center;
+}

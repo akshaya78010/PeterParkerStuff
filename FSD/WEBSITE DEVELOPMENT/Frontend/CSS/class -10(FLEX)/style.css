@@ -1,0 +1,21 @@
+.parent {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 2px solid black;
+}
+
+.child1,
+.child2,
+.child3,
+.child4,
+.child5,
+.child12 {
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
+  border: 2px solid deepskyblue;
+}

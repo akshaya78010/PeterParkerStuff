@@ -1,0 +1,198 @@
+.one {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.two {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to bottom left,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.three {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to bottom right,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.four {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to top left,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.five {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to top right,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.six {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: radial-gradient(
+    pink 0%,
+    yellow 10%,
+    lightgreen 20%,
+    lightblue 30%,
+    rgb(207, 131, 207) 40%
+  );
+  border-radius: 20px;
+}
+
+.seven {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: radial-gradient(
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.eight {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: conical-gradient(
+    50% 30%,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+/* .nine {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  box-shadow :
+}
+
+.ten {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to top right,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.eleven {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to top right,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.twelve {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to top right,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.thirteen {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to top right,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+}
+
+.fourteen {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to top right,
+    pink,
+    yellow,
+    lightgreen,
+    lightblue,
+    rgb(207, 131, 207)
+  );
+  border-radius: 20px;
+} */

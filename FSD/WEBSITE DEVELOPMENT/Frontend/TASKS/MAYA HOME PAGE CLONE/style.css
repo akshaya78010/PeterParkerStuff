@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #eaf0f2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+header {
+  background-color: rgb(255, 255, 255);
+  /* border-radius: 10px; */
+  height: 100px;
+  position: sticky;
+}
+
+.elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* transform: translateX(-400px);
+  transform: translateY(-30px); */
+}
+
+.ele2 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 250px;
+  height: 70px;
+}
+
+.menu_image {
+  /* margin-top: 70px;
+  margin-right: 10px; */
+  margin-top: 30px;
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.login_logout_button button {
+  background-color: #008738;
+  color: white;
+  border: 2px solid #008738;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.front_part {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.intro_image {
+  width: 550px;
+  height: 550px;
+  transform: translateY(-10px);
+}
+.girl_image img {
+  width: 700px;
+  height: 700px;
+  transform: translateY(-90px);
+}
+
+.photo_front_div {
+  transform: translateX(500px);
+  transform: translateY(-300px);
+  width: 450px;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.photo_front_div img {
+  margin-top: 80px;
+  margin-left: -50px;
+  width: 300px;
+  height: 80px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1c242f;
+}
+
+footer h1 {
+  font-size: 40px;
+  color: green;
+  margin-bottom: 0px;
+}
+
+footer h2 {
+  font-size: 30px;
+  color: green;
+}
+
+footer .contact_section p {
+  display: inline;
+}
+
+header .options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+}
+
+header .options nav {
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  header .options {
+    display: none;
+  }
+
+  .menu_image {
+    display: block;
+  }
+}

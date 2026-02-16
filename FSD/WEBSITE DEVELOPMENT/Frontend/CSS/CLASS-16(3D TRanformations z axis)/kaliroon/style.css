@@ -1,0 +1,105 @@
+body {
+  background-color: white;
+}
+
+.frame {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 450px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 100px;
+  perspective-origin: top center;
+  transform: rotateX(60deg) ;
+  box-shadow: 0px 0px 40px grey;
+  z-index: 1;
+}
+
+.down {
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid black; */
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 450px;
+  position: absolute;
+  /* top :-150px; */
+  /* left : 0px;
+  right : 0px; */
+  /* margin-top: 0px; */
+  /* margin-left:0px; */
+  box-shadow: 0px 0px 40px grey;
+  transform-origin: bottom center;
+  transform: rotateX(269deg);
+}
+
+.left {
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid black; */
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 450px;
+  position: absolute;
+  /* top :-150px; */
+  /* left : 0px;
+  right : 0px; */
+  /* margin-top: 0px; */
+  /* margin-left:0px; */
+  transform-origin: left center;
+  transform: rotateY(269deg);
+  box-shadow: 0px 0px 40px grey;
+  /* box-shadow: 0px 0px 50px 50px black; */
+}
+
+.right {
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid black; */
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 450px;
+  position: absolute;
+  /* background-color: black; */
+  /* top :-150px; */
+  /* left : 0px;*/
+  /* right : 0px;  */
+  /* margin-top: 0px; */
+  /* margin-left:0px; */
+  transform-origin: right center;
+  transform: rotateY(-269deg);
+  box-shadow: 0px 0px 40px grey;
+  /* z-index: 1; */
+}
+
+.up {
+  width: 300px;
+  height: 300px;
+
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 450px;
+  position: absolute;
+  /* background-color: white; */
+  /* top :-150px; */
+  /* left : 0px;
+  right : 0px; */
+  /* margin-top: 0px; */
+  /* margin-left:0px; */
+  transform-origin: top center;
+  transform: rotateX(90deg);
+  box-shadow: 0px 0px 40px grey;
+  /* box-shadow: 0px 0px 50px 50px black; */
+}

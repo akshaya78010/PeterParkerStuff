@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye-Catching Header</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            min-height: 200vh; /* To enable scrolling and show the sticky effect */
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: #1a232f; /* Base background color */
+            
+            /* --- Key CSS for the Glow Effect --- */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 2.5rem;
+            z-index: 2; /* Ensure links are above the gradient */
+        }
+        
+        header a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #d1d5db;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #ffffff;
+        }
+
+        header a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #00bcd4;
+            transition: width 0.4s ease;
+        }
+
+        header a:hover::after {
+            width: 100%;
+        }
+
+        /* --- The Gradient Glow Element --- */
+        .header-glow {
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, #00bcd480 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            top: 0;
+            left: 0;
+            transition: opacity 0.5s ease-in-out;
+            pointer-events: none; /* Allows clicks to pass through */
+            z-index: 1; /* Place it behind the links */
+            opacity: 0; /* Initially hidden */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#coding-profiles">Coding Profiles</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact Information</a>
+            <a href="#resume">Resume</a>
+        </div>
+        <div class="header-glow"></div>
+    </header>
+
+    <main>
+        <h1>Your Portfolio Content</h1>
+        <p>Scroll down to see the sticky header in action.</p>
+    </main>
+
+    <script>
+        const header = document.querySelector('header');
+        const glow = document.querySelector('.header-glow');
+
+        header.addEventListener('mousemove', (e) => {
+            const rect = header.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            glow.style.left = `${x}px`;
+            glow.style.top = `${y}px`;
+            glow.style.opacity = 1;
+        });
+
+        header.addEventListener('mouseleave', () => {
+            glow.style.opacity = 0;
+        });
+    </script>
+
+</body>
+</html>

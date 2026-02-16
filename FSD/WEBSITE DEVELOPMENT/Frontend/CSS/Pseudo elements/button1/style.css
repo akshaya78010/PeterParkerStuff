@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+}
+
+.demo {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  /* overflow: hidden; */
+  font-size: 25px;
+  z-index: 1;
+}
+
+.demo::before {
+  width: 30px;
+  height: 30px;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid;
+  opacity: 0.8;
+  /* filter: blur(15px); */
+  transform: translateX(130px) translateY(30px);
+  transition: transform 1s linear;
+}
+
+.demo:hover::before {
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  transform: translateX(8px) translateY(3px);
+}

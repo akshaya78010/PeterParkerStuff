@@ -1,0 +1,24 @@
+.parent {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.class1 {
+  padding: 10px;
+}
+.class2 {
+  display: none;
+  padding: 5px;
+}
+
+.subdiv:hover {
+  background-color: blanchedalmond;
+}
+.parent:hover .class2 {
+  display: block;
+}

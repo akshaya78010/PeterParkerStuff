@@ -1,0 +1,303 @@
+body {
+  width: 1000px;
+  height: 1000px;
+  background: linear-gradient(black, rgb(17, 17, 102));
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  min-height: 100%;
+  overflow-y: auto; /* Ensures vertical scrolling */
+}
+
+.solar_system {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left : 400px;
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    rgb(209, 174, 48),
+    orange,
+    yellow
+  );
+  box-shadow: 0px 0px 200px 80px gold;
+}
+
+.mercury_orbit {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+}
+
+.venus_orbit {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+}
+
+.earth_orbit {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+}
+
+.mars_orbit {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+}
+
+.jupiter_orbit {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+}
+
+.saturn_orbit {
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+}
+
+.uranus_orbit {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+}
+
+.neptune_orbit {
+  width: 850px;
+  height: 850px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+}
+
+.mercury {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(grey, white, grey);
+  transform: translateX(75px);
+  animation-name: animate_mercury;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+.venus {
+  background: url("venus.png");
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  transform: translateX(125px);
+  animation-name: animate_venus;
+  animation-duration: 15s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+.earth {
+  background: url("Earcth.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translateX(175px);
+  animation-name: animate_earth;
+  animation-duration: 15s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+.mars {
+  background: url("mars.png");
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  transform: translateX(225px);
+  animation-name: animate_mars;
+  animation-duration: 15s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+.jupiter {
+  background: url("jupiter.png");
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  animation-name: animate_jupiter;
+  animation-duration: 15s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translateX(275px);
+  z-index: 1;
+}
+
+.saturn {
+  background: url("saturn.png");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  animation-name: animate_saturn;
+  animation-duration: 15s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translateX(325px);
+  z-index: 1;
+}
+
+.uranus {
+  background: linear-gradient(
+    to bottom right,
+    white,
+    rgb(80, 192, 217),
+    rgb(80, 192, 217)
+  );
+  border-radius: 50%;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  animation-name: animate_uranus;
+  animation-duration: 15s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translateX(375px);
+  z-index: 1;
+}
+
+.neptune {
+  background: url("Neptune.png");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  animation-name: animate_neptune;
+  animation-duration: 15s;
+  animation-delay: 6.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translateX(425px);
+  z-index: 1;
+}
+
+@keyframes animate_mercury {
+  0% {
+    transform: rotateZ(0deg) translateX(75px);
+  }
+
+  100% {
+    transform: rotateZ(-360deg) translateX(75px);
+  }
+}
+
+@keyframes animate_venus {
+  0% {
+    transform: rotateZ(0deg) translateX(125px);
+  }
+
+  100% {
+    transform: rotateZ(-360deg) translateX(125px);
+  }
+}
+
+@keyframes animate_earth {
+  0% {
+    transform: rotateZ(0deg) translateX(175px);
+  }
+
+  100% {
+    transform: rotateZ(-360deg) translateX(175px);
+  }
+}
+
+@keyframes animate_mars {
+  0% {
+    transform: rotateZ(0deg) translateX(225px);
+  }
+
+  100% {
+    transform: rotateZ(-360deg) translateX(225px);
+  }
+}
+
+@keyframes animate_jupiter {
+  0% {
+    transform: rotateZ(0deg) translateX(275px);
+  }
+
+  100% {
+    transform: rotateZ(-360deg) translateX(275px);
+  }
+}
+
+@keyframes animate_saturn {
+  0% {
+    transform: rotateZ(0deg) translateX(325px);
+  }
+
+  100% {
+    transform: rotateZ(-360deg) translateX(325px);
+  }
+}
+
+@keyframes animate_uranus {
+  0% {
+    transform: rotateZ(0deg) translateX(375px);
+  }
+
+  100% {
+    transform: rotateZ(-360deg) translateX(375px);
+  }
+}
+
+@keyframes animate_neptune {
+  0% {
+    transform: rotateZ(0deg) translateX(425px);
+  }
+
+  100% {
+    transform: rotateZ(-360deg) translateX(425px);
+  }
+}

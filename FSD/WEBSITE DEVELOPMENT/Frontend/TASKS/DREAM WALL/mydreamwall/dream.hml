@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamSpace - My Dream Wall</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f0f2f0, #000c40);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1c1c1c;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .dream-form {
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .dream-form input, .dream-form select, .dream-form textarea, .dream-form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .dream-form button {
+      background-color: #00b894;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .dream-form button:hover {
+      background-color: #019875;
+    }
+
+    .dream-wall {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .dream-card {
+      background-color: #333;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .dream-card h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.2em;
+    }
+
+    .dream-card p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DreamSpace - My Dream Wall</h1>
+  </header>
+
+  <div class="container">
+    <div class="dream-form">
+      <h2>Share Your Dream</h2>
+      <input type="text" id="dreamTitle" placeholder="Title of your dream">
+      <select id="dreamCategory">
+        <option value="Career">Career</option>
+        <option value="Travel">Travel</option>
+        <option value="Health">Health</option>
+        <option value="Learning">Learning</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea id="dreamDesc" rows="4" placeholder="Describe your dream..."></textarea>
+      <button onclick="addDream()">Post Dream</button>
+    </div>
+
+    <div class="dream-wall" id="dreamWall">
+      <!-- Dream cards will appear here -->
+    </div>
+  </div>
+
+  <script>
+    function addDream() {
+      const title = document.getElementById('dreamTitle').value;
+      const category = document.getElementById('dreamCategory').value;
+      const description = document.getElementById('dreamDesc').value;
+
+      if (title.trim() === '' || description.trim() === '') {
+        alert("Please fill in both title and description.");
+        return;
+      }
+
+      const card = document.createElement('div');
+      card.className = 'dream-card';
+      card.innerHTML = `
+        <h3>${title} (${category})</h3>
+        <p>${description}</p>
+      `;
+
+      document.getElementById('dreamWall').prepend(card);
+
+      document.getElementById('dreamTitle').value = '';
+      document.getElementById('dreamCategory').value = 'Career';
+      document.getElementById('dreamDesc').value = '';
+    }
+  </script>
+</body>
+</html>

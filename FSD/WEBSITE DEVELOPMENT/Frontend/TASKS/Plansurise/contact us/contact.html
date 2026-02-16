@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav class="header">
+        <div class="nav-left">
+            <img class="logo_img" src="img/logo.png" alt="logo">
+            <div class="logo">Planurise</div>
+        </div>
+        <div class="nav-right desktop-nav">
+            <div class="nav-item"><a href="home_page.html" class="no-underline active">Home</a></div>
+            <div class="nav-item"><a href="plan_ur_event.html" class="no-underline">Plan your Event</a></div>
+            <div class="nav-item"><a href="packages.html" class="no-underline">Packages</a></div>
+            <div class="nav-item"><a href="Guest.html" class="no-underline">Guest Manager</a></div>
+            <div class="nav-item"><a href="My_events.html" class="no-underline">My events</a></div>
+            <div class="nav-item"><a href="about.html" class="no-underline">About us</a></div>
+            <div class="user">
+                <a href="profile.html" class="no-underline">
+                    <img class="profile-img" src="img/profile.jpg" alt="Profile">
+                </a>
+            </div>
+        </div>
+        <button class="menu-bar" onclick="openSidebar()">&#9776;</button>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-icon" onclick="closeSidebar()">&times;</div>
+        <div class="options">
+            <a href="home_page.html" class="no-underline active">Home</a>
+            <a href="plan_ur_event.html" class="no-underline">Plan your Event</a>
+            <a href="packages.html" class="no-underline">Packages</a>
+            <a href="Guest.html" class="no-underline">Guest Manager</a>
+            <a href="my_events.html" class="no-underline">My events</a>
+            <a href="about.html" class="no-underline">About us</a>
+            <a href="profile.html" class="no-underline">Profile</a>
+        </div>
+    </div>
+
+    
+    <div class="messenger_form">
+        <div class="heading_part">
+            <p>Contact us</p>
+            <p>Have any questions or need help? We're here for you!</p>
+        </div>
+        <div class="container">
+            <label>Your Name</label>
+            <input type="text-field" placeholder="Enter Your Name" />
+        </div>
+        <div class="container">
+            <label>Your Email</label>
+            <input type="text-field" placeholder="Enter Your email" />
+        </div>
+        <div class="container">
+            <label>Message</label>
+            <textarea type="message" rows="8" placeholder="Your Message..."></textarea>
+        </div>
+        <button>Send Message</button>
+    </div>
+
+    <div class="contact-details">
+        <div class="image">
+            <img src="https://img.freepik.com/free-vector/customer-support-flat-design-illustration_23-2148889374.jpg"
+                alt="contact-img" />
+        </div>
+        <div class="description_matter">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> support@Planurise.com</p>
+            <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 98765 43210</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Guntur, Andhra Pradesh, India</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="./footer.png" alt="Planurise Logo" class="footer-logo" />
+                <h2>Planurise</h2>
+                <p>Your one-stop destination to customize and plan magical events of all kinds!</p>
+            </div>
+            <div class="footer-center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="footer-icons">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/instagram.svg"
+                            alt="Instagram" /></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/facebook.svg"
+                            alt="Facebook" /></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/twitter.svg"
+                            alt="Twitter" /></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/youtube.svg"
+                            alt="YouTube" /></a>
+                </div>
+                <div class="footer-icons">
+                    <a href="#"><img src="./home.png" alt="Home" /></a>
+                    <a href="#"><img src="./share.png" alt="Share" /></a>
+                    <a href="#"><img src="./heart.png" alt="Favourite" /></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h3>Find Us</h3>
+                <p>123 Celebration Street,<br />Event City, India</p>
+                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="150" style="border:0;"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Planurise. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Sidebar Toggle Script -->
+    <script>
+        function openSidebar() {
+            document.getElementById("sidebar").style.display = "block";
+        }
+        function closeSidebar() {
+            document.getElementById("sidebar").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

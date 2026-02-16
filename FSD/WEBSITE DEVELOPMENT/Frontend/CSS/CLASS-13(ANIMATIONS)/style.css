@@ -1,0 +1,85 @@
+.demo {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation-name: Myanimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+
+.demo1 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation-name: Myanimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-fucntion: ease-out;
+  animation-delay: 1s;
+  position: relative;
+}
+
+.demo2 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation-name: Myanimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+.demo3 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation-name: Myanimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+/* @keyframes Myanimation {
+  from {
+    background-color: black;
+    top: 0px;
+    border-radius: 0px;
+  }
+  to {
+    background-color: red;
+    top: 400px;
+    border-radius : 50%;
+  }
+} */
+
+/* @keyframes Myanimation {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: red;
+  }
+} */
+
+@keyframes Myanimation {
+  0% {
+    background-color: deeppink;
+    left: 0px;
+    /* border-radius: 0px; */
+  }
+  50% {
+    background-color: deepskyblue;
+    left: 200px;
+    /* border-radius: 50%; */
+  }
+
+  100% {
+    background-color: lightgreen;
+    left: 400px;
+    /* border-radius: 0px; */
+  }
+}

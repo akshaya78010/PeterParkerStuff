@@ -1,0 +1,13 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent div {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}

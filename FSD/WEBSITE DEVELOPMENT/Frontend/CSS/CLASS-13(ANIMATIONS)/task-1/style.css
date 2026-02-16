@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
+
+.board {
+  width: 600px;
+  height: 600px;
+  position: reltive;
+  /* z-index : -1; */
+}
+
+.striker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  transform: translateX(255px) translateY(-220px);
+  animation: anime;
+  animation-duration: 2s;
+  animation-iteration-count: infinte;
+  /* z-index: 1; */
+}
+
+.coins {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  transform: translateX(185px) translateY(-520px);
+  animation: :animeCoin;
+}
+
+@keyframes anime {
+  100% {
+    transform: translateX(195px) translateY(-507px);
+  }
+}
+
+@keyframes animeCoin{
+    50%{
+      transform: translateX(185px) translateY(-520px);
+    }
+    100%{
+      transform: translateX(185px) translateY(-520px);
+    }
+}

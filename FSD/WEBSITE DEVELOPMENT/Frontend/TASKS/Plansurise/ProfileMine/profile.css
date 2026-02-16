@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --sage-green: #aac3ad;
+  --warm-beige: #e2cfba;
+  --slate-olive: #727d71;
+  --rich-brown: #6d4a3b;
+  --muted-tan: #a38f6f;
+}
+
+.grand_parent_main {
+  display: flex;
+  justify-content: center;
+}
+.parent_main {
+  display: flex;
+  max-width: 1400px;
+  justify-content: center;
+  background-color: #e2cfba;
+  border: 2px solid #e2cfba;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 2px grey;
+}
+.main {
+  display: flex;
+
+  margin: 10px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 1; */
+}
+body {
+  background: linear-gradient(to right, #aac3ad, #e2cfba);
+}
+.profile_pic {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  /* padding: 5px; */
+  /* margin: 5px; */
+}
+
+.name_email_info {
+  display: flex;
+  gap: 20px;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0px;
+}
+
+.info p:nth-child(1) {
+  font-size: 30px;
+  color: #4b1e0b;
+  font-weight: bold;
+}
+
+.info p:nth-child(2) {
+  font-size: 16px;
+  color: #727d71;
+}
+
+.hr_tag {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 2px solid #a38f6f;
+}
+
+.random_event_related_info {
+  margin-top: 20px;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.Events_Attended,
+.Reviews_Given,
+.Wishlist {
+  border-radius: 10px;
+  background-color: #a38f6f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.About_You {
+}

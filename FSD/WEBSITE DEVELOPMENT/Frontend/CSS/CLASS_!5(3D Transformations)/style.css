@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+}
+.parent {
+  margin-top: -300px;
+  transform-style: preserve-3d;
+  perspective: 100px;
+  perspective-origin: center center;
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  transform: translate(200px, 500px);
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(180deg, deeppink, pink);
+  box-shadow: 0px 0px 15px 5px deeppink;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transform-origin: top right;
+  /* border : 20px solid white; */
+  animation-name: myanime;
+  animation-duration: 3s;
+
+  /* transform: rotateX(20deg); */
+}
+
+@keyframes myanime {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(60deg);
+  }
+  40% {
+    transform: rotateY(120deg);
+  }
+  60% {
+    transform: rotateY(180deg);
+  }
+  80% {
+    transform: rotateY(360deg);
+  }
+  90% {
+    transform: rotateY(400deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}

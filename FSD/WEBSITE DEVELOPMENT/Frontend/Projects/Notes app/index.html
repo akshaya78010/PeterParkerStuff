@@ -1,0 +1,51 @@
+<!DOCTYPE html>\
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="adder">
+            <div class="date_time_delete">
+                <div class="date_time">
+                    <p></p>
+                    <p></p>
+                </div>
+                <button class="delete">🗑️</button>
+            </div>
+            <div class="input">
+                <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="buttons">
+                <button onclick="add_a_note()">Add</button>
+                <button onclick="save_the_note()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var d = new Date();
+        var datel = document.querySelector('.date_time');
+        var para = datel.querySelectorAll('p');
+        para[0].textContent = d.getDate() + '/' + (d.getMonth() + 1) + '/' + (d.getFullYear() % 100);
+        para[1].textContent = d.toLocaleTimeString();
+
+        function add_a_note(){
+            
+        }
+
+        function save_the_note()
+        {
+
+        }
+
+    </script>
+</body>
+
+</html>

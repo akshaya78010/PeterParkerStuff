@@ -1,0 +1,358 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: sticky;
+  top: 0;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 28px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: white;
+}
+.no-underline:hover {
+  color: #ad2f93;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  /* transition: background 0.3s ease; */
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* <!-- my css code--> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: auto;
+  background-image: url("https://wallpapercave.com/wp/wp5529280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: linear-gradient(135deg, #1597b8, #b9e7fc, #8eb8fc); */
+  /* background: linear-gradient(
+    135deg,
+    #a1c4fd,
+    #6dd5fa,
+    #2980b9,
+    #2c3e50,
+    #1e3c72,
+    #6a11cb,
+    #2575fc
+  ); */
+
+  /* background: linear-gradient(
+    135deg,
+    #3b82f6,
+    #60a5fa,
+    #93c5fd,
+    #bfdbfe,
+    #93c5fd,
+    #60a5fa,
+    #3b82f6
+  ); */
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+/* Responsive flex widths */
+.container > div {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Left side wider on large screens */
+@media (min-width: 901px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .container > div:first-child {
+    flex: 3;
+  }
+
+  .container > div:last-child {
+    flex: 1;
+  }
+}
+
+/* Stack on small screens */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container > div {
+    width: 100%;
+  }
+}
+
+.dream-input {
+  background: rgb(63, 191, 242);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.dream-input h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  font-size: 16px;
+}
+
+.btns button {
+  background-color: #7f53ac;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  margin: 10px 5px 0 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btns button:hover {
+  background-color: #5d3ab9;
+}
+
+.progress-panel {
+  position: sticky;
+  top: 0;
+  background: rgb(63, 191, 242);
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-height: 250px;
+  min-height: 250px;
+  height: 250px;
+}
+
+.progress-circle {
+  width: 140px;
+  height: 140px;
+  min-width: 140px;
+  min-height: 140px;
+  border-radius: 50%;
+  border: 12px solid #00ffae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.dream-post {
+  width: 100%;
+  background: rgb(63, 191, 242);
+  padding: 30px;
+  border-radius: 15px;
+  opacity : 0.7;
+  /* backdrop-filter: blur(10px); */
+  margin-top: 20px;
+  position: relative;
+}
+
+.dream-post1 {
+  width: 100%;
+  background: lightgreen;
+  padding: 30px;
+  border-radius: 15px;
+  /* backdrop-filter: blur(10px); */
+  margin-top: 20px;
+  position: relative;
+}
+
+.dream-post2 {
+  width: 100%;
+  background: deeppink;
+  padding: 30px;
+  border-radius: 15px;
+  /* backdrop-filter: blur(10px); */
+  margin-top: 20px;
+  position: relative;
+}
+
+.dream-post .btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #7f53ac;
+  border: none;
+}
+
+.dream-post .btn:hover {
+  background-color: #5d3ab9;
+}
+
+.delete-icon {
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  background: linear-gradient(to bottom right, #e62737, #ffc371);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.delete-icon:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to bottom right, #e60000, #ff9966);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 900px) {
+  .progress-panel {
+    width: 100%;
+    margin-top: 20px;
+    align-self: stretch;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btns button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .dream-input h2 {
+    font-size: 18px;
+  }
+  .dream-post h3 {
+    font-size: 18px;
+  }
+  .progress-circle {
+    width: 80px;
+    height: 80px;
+    border-width: 8px;
+    font-size: 16px;
+  }
+}
+
+footer {
+  background-color: #672bab;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.progress-slider {
+  width: 100%;
+  margin-top: 15px;
+  accent-color: #7f53ac; /* Modern browsers */
+  height: 4px;
+  border-radius: 5px;
+  z-index : 1;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 10px 0;
+  background: rgba(127, 83, 172, 0.08);
+  padding: 10px 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(127, 83, 172, 0.07);
+}
+
+.slider-container label {
+  font-size: 15px;
+  color: #7f53ac;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.progress-slider {
+  width: 120px;
+  accent-color: #7f53ac;
+  height: 6px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #7f53ac 0%, #00ffae 100%);
+  outline: none;
+}
+
+.slider-container output {
+  min-width: 28px;
+  text-align: center;
+  font-weight: bold;
+  color: #7f53ac;
+  background: #fff;
+  border-radius: 6px;
+  padding: 2px 6px;
+  border: 1px solid #e0e0e0;
+  margin-left: 4px;
+  font-size: 15px;
+}

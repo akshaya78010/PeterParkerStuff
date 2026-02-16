@@ -1,0 +1,152 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  perspective: 1000px;
+}
+.cube {
+  width: 300px;
+  height: 300px;
+  /* border: 3px solid white; */
+  position: relative;
+  transform-style: preserve-3d;
+  animation: anime1 5s infinite linear;
+}
+
+.cube > div {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  opacity: 0.9;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left {
+  background-color: #ffffff;
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.right {
+  background-color: red;
+  transform: rotateY(90deg) translateZ(-150px);
+}
+
+.top {
+  background-color: blue;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.bottom {
+  background-color: gold;
+  transform: rotateX(90deg) translateZ(-150px);
+}
+
+.front {
+  background-color: green;
+  transform: translateZ(150px);
+}
+
+.back {
+  background-color: orange;
+  transform: translateZ(-150px);
+}
+
+.block1 {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius :10px;
+  align-self: start;
+  justify-self: start;
+}
+
+.block2 {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius :10px;
+  border: 1px solid black;
+  align-self: start;
+  justify-self: center;
+}
+
+.block3 {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius :10px;
+  border: 1px solid black;
+  align-self: start;
+  justify-self: end;
+}
+
+.block4 {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius :10px;
+  border: 1px solid black;
+  align-self: center;
+  justify-self: start;
+}
+
+.block5 {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius :10px;
+  border: 1px solid black;
+  align-self: center;
+  justify-self: start;
+}
+
+.block6 {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius :10px;
+  border: 1px solid black;
+  align-self: center;
+  justify-self: end;
+}
+
+.block7 {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius :10px;
+  border: 1px solid black;
+  align-self: end;
+  justify-self: start;
+}
+
+.block8 {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius :10px;
+  border: 1px solid black;
+  align-self: end;
+  justify-self: center;
+}
+
+.block9 {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius :10px;
+  border: 1px solid black;
+  align-self: end;
+  justify-self: end;
+}
+
+@keyframes anime1 {
+  100% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}

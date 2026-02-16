@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+}
+
+header {
+  width: 100%;
+  height: 152px;
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 4px 0px 10px 0px #2f7af91a;
+  position: sticky;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
+
+.logo {
+  width: 158px;
+  height: 76px;
+}
+
+.header_elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 38px 96px 38px 96px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: green; */
+  gap: 40px;
+}
+
+.navbar .Home {
+  padding: 16px 8px 16px 8px;
+}
+
+.navbar .Skills {
+  padding: 10px 0px 10px 0px;
+}
+
+.navbar > div:hover {
+  font: inter;
+  font-weight: 500;
+  /* font-style: Medium; */
+  font-size: 14px;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #ffb400;
+}
+
+.Header .img {
+  width: 1439.38px;
+  height: 630px;
+  background-color: #ffffff;
+}
+
+.frame img {
+  width: 10.67px;
+  height: 10.37px;
+  padding: 16px 8px 16px 8px;
+  z-index: 50;
+}
+
+.Hero_content button {
+  background-color: #ffb400;
+}
+.lady_image img {
+  width: 808.01px;
+  height: 550.41px;
+  /* margin-top: 231.59px;
+  margin-left: 631.68px; */
+}

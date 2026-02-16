@@ -1,0 +1,289 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: sticky;
+  top: 0;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 28px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: white;
+}
+.no-underline:hover {
+  color: #ad2f93;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  /* transition: background 0.3s ease; */
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* .main_plate {
+  width: 1500px;
+  height: 1500px;
+  /* background-color: white; */
+  background: url("art.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid whitesmoke;
+  border-radius: 20px;
+  position: relative;
+  top: 10px;
+  /* border-radius: 30px; */
+  z-index: 1;
+} */
+
+/* .main_plate_cover {
+  width: 1500px;
+  height: 700px;
+  background-color: rgb(51, 105, 186);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 20px;
+} */
+
+.Add_button {
+  width: 700px;
+  height: 80px;
+  font-size: 20px;
+  color: white;
+  background-color: #b4f8ff;
+  border: 2px solid rgb(51, 105, 186);
+  border-radius: 20px;
+  position: absolute;
+  top: 50px;
+  left: 180px;
+  z-index: 3;
+}
+.dream_block {
+  width: 1000px;
+  height: 150px;
+  background-color: rgb(191, 228, 246);
+  border: 2px solid rgb(51, 105, 186);
+  border-radius: 30px;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  z-index: 4;
+}
+
+/* .heading {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(191, 228, 246);
+  border: 2px solid rgb(51, 105, 186);
+  border-radius: 30px;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  z-index: 5;
+} */
+
+.dream_text {
+  width: 800px;
+  height: 90px;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.SAVE {
+  width: 120px;
+  height: 30px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  background-color: #b4f8ff;;
+  position: absolute;
+  top: 25px;
+  left: 850px;
+  z-index: 5;
+}
+
+.EDIT {
+  width: 120px;
+  height: 30px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  background-color: #b4f8ff;;
+  position: absolute;
+  top: 65px;
+  left: 850px;
+  z-index: 5;
+}
+
+.POST {
+  width: 120px;
+  height: 30px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  background-color: #b4f8ff;;
+  position: absolute;
+  top: 105px;
+  left: 850px;
+  z-index: 5;
+}
+
+.dream_block1 {
+  width: 1000px;
+  height: 150px;
+  background-color: rgb(191, 228, 246);
+  border: 2px solid rgb(51, 105, 186);
+  border-radius: 30px;
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  z-index: 4;
+}
+
+.dream_text1 {
+  width: 800px;
+  height: 90px;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.Done {
+  width: 120px;
+  height: 50px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  background-color: #b4f8ff;;
+  position: absolute;
+  top: 40px;
+  left: 850px;
+  z-index: 5;
+}
+
+.delete-btn {
+  border: 3px solid #fff;
+  background-color: #6dd5ed;
+  border-radius: 20px;
+  position: absolute;
+  top: 5px;
+  left: 960px;
+}
+
+.delete-btn1 {
+  border: 3px solid #fff;
+  background-color: #6dd5ed;
+  border-radius: 20px;
+  position: absolute;
+  top: 5px;
+  left: 960px;
+}
+
+.progress {
+  width: 300px;
+  height: 350px;
+  background-color: rgb(191, 228, 246);
+  border: 3px solid rgb(51, 105, 186);
+  border-radius: 30px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.progress_text {
+  font-size: 25px;
+  /* color: white; */
+  position: absolute;
+  top: -15px;
+  left: 80px;
+}
+.texty {
+  position: absolute;
+  top: 250px;
+}
+
+.circle-wrap {
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border: 10px solid #03f052;
+  border-radius: 50%;
+  /* box-shadow: 0 0 5px 10px #03f052; */
+  margin: 20px auto;
+  position: relative;
+  top: 30px;
+  z-index: 7;
+}
+
+.circle .mask,
+.circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #d0d400;
+}
+
+.full {
+  transform: rotate(252deg); /* 70% of 360 */
+}
+
+.inside-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  line-height: 120px;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: bold;
+  font-size: 22px;
+}

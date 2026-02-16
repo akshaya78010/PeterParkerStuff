@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dream Wall - DreamConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dreamer.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="header">
+      <div class="nav-left">
+        <div class="logo">DreamConnect</div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-item">
+          <a href="home-page1.html" class="no-underline">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="explore1.html" class="no-underline">Explore</a>
+        </div>
+        <div class="nav-item">
+          <a href="dream.html" class="no-underline">My Dream Wall</a>
+        </div>
+        <div class="nav-item">
+          <a href="community.html" class="no-underline">Community</a>
+        </div>
+        <div class="nav-item">
+          <a href="" class="no-underline">Contact Us</a>
+        </div>
+        <div class="user">
+          <a href="" class="no-underline">
+            <img class="profile-img" src="img/profile.jpg" alt="Profile">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--my code-->
+  <div class="container">
+    <div>
+      <!-- section for writing the dreams-->
+      <div class="dream-input">
+        <h2>Add your dream</h2>
+        <textarea class="dream-text" rows="3" placeholder="Describe your dream..."></textarea>
+        <div class="btns">
+          <button class="save-btn">SAVE</button>
+          <button class="post-btn">POST</button>
+        </div>
+      </div>
+
+      <!--dream units-->
+      <div class="dream-list">
+        <div class="dream-post">
+          <h3>Become a Full Stack Developer</h3>
+          <div class="slider-container">
+            <label for="slider1">Progress:</label>
+            <input id="slider1" type="range" min="0" max="100" value="53" class="progress-slider">
+            <output>53%</output>
+          </div>
+          <button class="btn done-btn">Done</button>
+          <button class="btn edit-btn">Edit</button>
+          <button class="delete-icon">🗑</button>
+        </div>
+
+        <div class="dream-post">
+          <h3>Build a Portfolio Website</h3>
+          <div class="slider-container">
+            <label for="slider1">Progress:</label>
+            <input id="slider1" type="range" min="0" max="100" value="30" class="progress-slider">
+            <output>30%</output>
+          </div>
+          <button class="btn done-btn">Done</button>
+          <button class="btn edit-btn">Edit</button>
+          <button class="delete-icon">🗑</button>
+        </div>
+
+        <div class="dream-post">
+          <h3>Contribute to Open Source</h3>
+          <div class="slider-container">
+            <label for="slider1">Progress:</label>
+            <input id="slider1" type="range" min="0" max="100" value="45" class="progress-slider">
+            <output>45%</output>
+          </div>
+          <button class="btn done-btn">Done</button>
+          <button class="btn edit-btn">Edit</button>
+          <button class="delete-icon">🗑</button>
+        </div>
+
+        <div class="dream-post">
+          <h3>Crack a Product-Based Company</h3>
+          <div class="slider-container">
+            <label for="slider2">Progress:</label>
+            <input id="slider2" type="range" min="0" max="100" value="0" class="progress-slider">
+            <output>0%</output>
+          </div>
+          <button class="btn done-btn">Done</button>
+          <button class="btn edit-btn">Edit</button>
+          <button class="delete-icon">🗑</button>
+        </div>
+
+        <div class="dream-post">
+          <h3>Launch a Tech Blog</h3>
+          <div class="slider-container">
+            <label for="slider2">Progress:</label>
+            <input id="slider2" type="range" min="0" max="100" value="100" class="progress-slider">
+            <output>100%</output>
+          </div>
+          <button class="btn done-btn">Done</button>
+          <button class="btn edit-btn">Edit</button>
+          <button class="delete-icon">🗑</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!--progress panel located at side-->
+    <div class="progress-panel">
+      <div class="progress-circle">20%</div>
+      <p>
+        <bold>PROGRESS</bold>
+      </p>
+      <p class="progress-stats">• Completed - 1<br />• Not Completed - 4</p>
+    </div>
+  </div>
+
+  <!--footer section-->
+  <footer>
+    <p>© 2025 DreamConnect • Empowering dreams through community</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/f0/a5/f2/f0a5f23310a36811b0828b45e2523d13.jpg">
+    <link rel="stylesheet" href="style.css" />
+    <title>RPS</title>
+</head>
+
+<body>
+    
+    <div class="pop_up">
+        <p><button onclick="close_pop_up()">X</button>
+        </p>
+        <br>
+        <p id=pop_up_message></p>
+    </div>
+    <div class="main">
+        <div class="scores">
+            <div class="opponent">
+                <label>&nbsp;&nbsp;opponent </label>
+                <div class="opponent_score"></div>
+            </div>
+
+            <div class="user">
+                <label>&nbsp;&nbsp;&nbsp;&nbsp; user</label>
+                <div class="user_score"></div>
+            </div>
+        </div>
+        <div class="game_play">
+            <div class="opponent_play" style="background-image: none;"></div>
+            <div class="user_play" style="background-image: none;"></div>
+        </div>
+
+        <div class="game_options">
+            <div class="rock" onclick="function_for_user_pick('rock')"></div>
+            <div class="paper" onclick="function_for_user_pick('paper')"></div>
+            <div class="scissor" onclick="function_for_user_pick('scissor')"></div>
+        </div>
+
+        <button class="reset" onclick="reset()">Reset</button>
+    </div>
+
+    <script>
+        // var opponent_display = document.getElementsByClassName("opponent_play");
+        // var user_display = document.getElementsByClassName("user_play");
+
+        //totrack the current turn
+        var current_user;
+        var current_opponent;
+
+        //to track the current scores
+        var current_user_score = 0;
+        var current_opponent_score = 0;
+
+        //to help user make choice
+        const arr = ["rock", "paper", "scissor"];
+
+        //to help retrive the gesture images
+        const images = {
+            rock: 'https://i.pinimg.com/736x/2b/f0/53/2bf0539eeff5e7a90151b6ed91f6d9a8.jpg',
+            paper: 'https://i.pinimg.com/736x/7c/47/c2/7c47c2d88d66f416925245bd63bb0265.jpg',
+            scissor: 'https://i.pinimg.com/736x/97/68/76/97687695bf2b62603c52b52bb97e861d.jpg'
+        };
+
+        //reset function
+        function reset() {
+            document.getElementsByClassName("user_score")[0].innerText = 0;
+            document.getElementsByClassName("opponent_score")[0].innerText = 0;
+            current_user_score = 0;
+            current_opponent_score = 0;
+
+            document.getElementsByClassName("opponent_play")[0].style.backgroundImage = "none";
+            document.getElementsByClassName("user_play")[0].style.backgroundImage = "none";
+        }
+
+
+
+        //function to find the winner
+        function win_or_lost(current_user_score, current_opponent_score) {
+            document.getElementsByClassName("pop_up")[0].style.display = "block";
+
+            if (current_user_score > current_opponent_score) {
+                document.getElementById("pop_up_message").innerText = "You Win!";
+            }
+            else if (current_user_score < current_opponent_score) {
+                document.getElementById("pop_up_message").innerText = "Opponent Wins!";
+            }
+            else {
+                document.getElementById("pop_up_message").innerText = "It's a draw guys";
+            }
+        }
+
+        //function to close the window pop up
+        function close_pop_up() {
+            document.getElementsByClassName("pop_up")[0].style.display = "none";
+            reset();
+        }
+
+        //function for calculating the score
+        function calculate_score(current_user, current_opponent) {
+
+            if (current_user == 'rock' && current_opponent == 'paper') {
+                current_opponent_score += 1
+
+                //display score
+                document.getElementsByClassName("opponent_score")[0].innerText = current_opponent_score;
+            }
+            else if (current_user == 'rock' && current_opponent == 'scissor') {
+                current_user_score += 1
+
+                document.getElementsByClassName("user_score")[0].innerText = current_user_score;
+            }
+            else if (current_user == 'paper' && current_opponent == 'rock') {
+                current_user_score += 1
+
+                document.getElementsByClassName("user_score")[0].innerText = current_user_score;
+            }
+            else if (current_user == 'paper' && current_opponent == 'scissor') {
+                current_opponent_score += 1
+
+                document.getElementsByClassName("opponent_score")[0].innerText = current_opponent_score;
+            }
+            else if (current_user == 'scissor' && current_opponent == 'rock') {
+                current_opponent_score += 1
+
+                document.getElementsByClassName("opponent_score")[0].innerText = current_opponent_score;
+            }
+            else if (current_user == 'scissor' && current_opponent == 'paper') {
+                current_user_score += 1
+
+                document.getElementsByClassName("user_score")[0].innerText = current_user_score;
+            }
+
+            if (current_user_score >= 10 || current_opponent_score >= 10) {
+                win_or_lost(current_user_score, current_opponent_score);
+            }
+
+        }
+
+        //function for allowing user pick
+        function function_for_user_pick(pick) {
+            if (pick == 'rock') {
+                document.getElementsByClassName("user_play")[0].style.backgroundImage = "url('https://i.pinimg.com/736x/2b/f0/53/2bf0539eeff5e7a90151b6ed91f6d9a8.jpg')";
+
+                current_user = 'rock';
+                current_opponent = arr[Math.floor(Math.random() * arr.length)]; // 'rock' | 'paper' | 'scissor'
+                document.getElementsByClassName("opponent_play")[0].style.backgroundImage = `url(${images[current_opponent]})`;
+
+            }
+            else if (pick == 'paper') {
+                document.getElementsByClassName("user_play")[0].style.backgroundImage = "url('https://i.pinimg.com/736x/7c/47/c2/7c47c2d88d66f416925245bd63bb0265.jpg')";
+
+                current_user = 'paper'
+                current_opponent = arr[Math.floor(Math.random() * arr.length)]; // 'rock' | 'paper' | 'scissor'
+                document.getElementsByClassName("opponent_play")[0].style.backgroundImage = `url(${images[current_opponent]})`;
+
+            }
+            else if (pick == 'scissor') {
+                document.getElementsByClassName("user_play")[0].style.backgroundImage =
+                    "url('https://i.pinimg.com/736x/97/68/76/97687695bf2b62603c52b52bb97e861d.jpg')";
+                current_user = 'scissor'
+                current_opponent = arr[Math.floor(Math.random() * arr.length)]; // 'rock' | 'paper' | 'scissor'
+                document.getElementsByClassName("opponent_play")[0].style.backgroundImage = `url(${images[current_opponent]})`;
+            }
+
+            calculate_score(current_user, current_opponent);
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+/* .My_div {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: solid rgb(134, 9, 71);
+  background-image: url("elephant.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.My_div3 {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: solid rgb(134, 9, 71);
+  background-image: url("elephant.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.My_div1 {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: solid rgb(134, 9, 71);
+  background-image: url("elephant.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.My_div2 {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: solid rgb(134, 9, 71);
+  background-image: url("elephant.jpg");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.My_div4 {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: solid rgb(134, 9, 71);
+  background-image: url("elephant.jpg");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.My_div5 {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: solid rgb(134, 9, 71);
+  background-image: url("elephant.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.My_div6 {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: solid rgb(134, 9, 71);
+  background-image: url("elephant.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.My_div7 {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: solid rgb(134, 9, 71);
+  background-image: url("elephant.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.My_div8 {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: solid rgb(134, 9, 71);
+  background-image: url("elephant.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+} */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.first_division {
+  border: solid greenyellow;
+  padding: 10px 40px 20px 25px;
+  background-color: pink;
+  margin: 25px 30px 25px 30px;
+}
+
+.second_division {
+  border: solid greenyellow;
+  margin: 50px;
+}
