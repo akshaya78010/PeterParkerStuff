@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void dfs(vector<vector<int>>&adjlst,vector<int>&visited,int starting_node){
+    visited[starting_node] = 1;
+    cout<<starting_node<<" ";
+    
+    for(auto node:adjlst[starting_node]){
+        if(!visited[node]){
+            dfs(adjlst,visited,node);
+        }
+    }
+    return;
+}
+
+int main(){
+    int n,m;
+    cin>>n>>m;
+    int starting_node;
+    cin>>starting_node;
+    
+    vector<vector<int>>adjlst(n);
+    
+    
+    for(int i =0; i < m ; i++){
+        int u,v;
+        cin>>u>>v;
+        
+        adjlst[u].push_back(v);
+        adjlst[v].push_back(u);
+    }
+    
+    vector<int>visited(n,0);
+    
+    dfs(adjlst,visited,starting_node);
+}
