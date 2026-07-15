@@ -1,0 +1,52 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n, m;
+    cin >> n >> m;
+
+    // ------------------ NORMAL ADJACENCY LIST ------------------
+
+    vector<vector<int>> adjlst(n);
+
+    for (int i = 0; i < m; i++) {
+        int u, v;
+        cin >> u >> v;
+
+        adjlst[u].push_back(v);
+        adjlst[v].push_back(u);
+    }
+
+    for (int i = 0; i < n; i++) {
+        cout << i << " : ";
+
+        for (auto edge : adjlst[i]) {
+            cout << edge << " ";
+        }
+
+        cout << '\n';
+    }
+
+    // ------------------ WEIGHTED ADJACENCY LIST ------------------
+
+    vector<vector<pair<int, int>>> wtadjlst(n);
+
+    for (int i = 0; i < n; i++) {
+        int u, v, wt;
+        cin >> u >> v >> wt;
+
+        wtadjlst[u].push_back({v, wt});
+    }
+
+    for (int i = 0; i < n; i++) {
+        cout << i << " : ";
+
+        for (auto edge : wtadjlst[i]) {
+            cout << "{" << edge.first << ", " << edge.second << "} ";
+        }
+
+        cout << '\n';
+    }
+
+    return 0;
+}
